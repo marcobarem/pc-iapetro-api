@@ -1,0 +1,28 @@
+export class Transaction {
+  constructor(
+    public readonly supplyDate: Date,
+    public readonly supplyTime: string,
+    public readonly employeeName: string,
+    public readonly product: string,
+    public readonly quantity: number,
+    public readonly unitPrice: number,
+    public readonly value: number,
+    public readonly coupon: string,
+    public readonly _id?: string,
+    public readonly fiscalDate?: Date,
+    public readonly fiscalTime?: string,
+    public readonly supplyVsSale?: string,
+    public readonly nozzle?: string,
+    public readonly initialCounter?: number,
+    public readonly finalCounter?: number,
+    public readonly calibration?: boolean,
+    public readonly movementDate?: Date,
+    public readonly priceA?: number,
+    public readonly priceB?: number,
+    public readonly priceC?: number,
+    public readonly record?: string,
+    public readonly substitution?: string,
+    public readonly createdAt: Date = new Date(),
+    public readonly updatedAt: Date = new Date(),
+  ) {}
+}
